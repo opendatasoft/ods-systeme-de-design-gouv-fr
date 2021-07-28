@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+@import "ods-dsfr";
+
+/* Import dsfr, then necessary components */
+@import "../node_modules/@gouvfr/dsfr/src/core/main";
+@import "../node_modules/@gouvfr/dsfr/src/schemes/main";
+@import "../node_modules/@gouvfr/dsfr/src/inputs/main";
+@import "../node_modules/@gouvfr/dsfr/src/buttons/main";
+@import "../node_modules/@gouvfr/dsfr/src/search/main";
+@import "../node_modules/@gouvfr/dsfr/src/links/main";
+@import "../node_modules/@gouvfr/dsfr/src/highlights/main";
+@import "../node_modules/@gouvfr/dsfr/src/utilities/main";
+@import "../node_modules/@gouvfr/dsfr/src/checkboxes/main";
+@import "../node_modules/@gouvfr/dsfr/src/content/main";
+@import "../node_modules/@gouvfr/dsfr/src/radios/main";
+@import "../node_modules/@gouvfr/dsfr/src/inputs/main";
+@import "../node_modules/@gouvfr/dsfr/src/table/main";
+@import "../node_modules/@gouvfr/dsfr/src/navigation/main";
+@import "../node_modules/@gouvfr/dsfr/src/header/main";
+@import "../node_modules/@gouvfr/dsfr/src/footer/main";
+@import "../node_modules/@gouvfr/dsfr/src/breadcrumb/main";
+@import "../node_modules/@gouvfr/dsfr/src/summary/main";
+
+@import "ods-dsfr-fix";

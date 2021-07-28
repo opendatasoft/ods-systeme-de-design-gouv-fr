@@ -1,0 +1,135 @@
+/**
+  * FIX Design d'état conflict
+*/
+
+:focus, :focus-visible {
+  z-index: inherit !important;
+}
+
+.odswidget-facet__category-container ol, ol > li, ul, ul > li {
+  padding-bottom: var(--is-list) 0rem;
+}
+
+/**
+ * Style d'un ensemble de champs
+ */
+
+.fr-fieldset {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  /**
+   * Modificateur pour afficher les éléments en inline
+   *//**
+   * Modificateur pour gérer l'état d'erreur
+   *//**
+   * Modificateur pour gérer l'état de validation
+   *//**
+   * Mixin disabled pour gérer l'état disabled
+   */
+}
+
+.fr-fieldset .fr-hint-text {
+  margin-bottom: 1rem;
+}
+
+.fr-fieldset__legend {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 700;
+}
+
+.fr-fieldset__legend .fr-hint-text {
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+  font-weight: 400;
+}
+
+.fr-fieldset__content {
+  position: relative;
+}
+
+.fr-fieldset--inline .fr-fieldset__content {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: -0.75rem 0;
+}
+
+.fr-fieldset--inline .fr-checkbox-group {
+  display: inline-flex;
+  margin-bottom: 0;
+}
+
+.fr-fieldset--inline .fr-checkbox-group:first-child {
+  margin-top: 0;
+}
+
+.fr-fieldset--inline .fr-checkbox-group:not(:last-child) {
+  margin-right: 1.25rem;
+}
+
+.fr-fieldset--inline .fr-checkbox-group:last-child {
+  margin-bottom: 0;
+}
+
+.fr-fieldset--inline .fr-radio-group {
+  display: inline-flex;
+}
+
+.fr-fieldset--inline .fr-radio-group:not(:last-child) input[type="radio" i] + label {
+  margin-right: 1.75rem;
+}
+
+.fr-fieldset--inline .fr-radio-group:first-child {
+  margin-top: 0;
+}
+
+.fr-fieldset--inline .fr-radio-group:first-child input[type="radio" i] + label {
+  margin-top: 0;
+}
+
+.fr-fieldset--inline .fr-radio-group:last-child {
+  margin-bottom: 0;
+}
+
+.fr-fieldset--inline .fr-radio-group:last-child input[type="radio" i] + label {
+  margin-bottom: 0;
+}
+
+.fr-fieldset--error .fr-fieldset__content::before {
+  content: "";
+  position: absolute;
+  top: 0.75rem;
+  bottom: 0.75rem;
+  left: -0.5rem;
+  width: 2px;
+}
+
+.fr-fieldset--valid .fr-fieldset__content::before {
+  content: "";
+  position: absolute;
+  top: 0.75rem;
+  bottom: 0.75rem;
+  left: -0.5rem;
+  width: 2px;
+}
+
+.fr-fieldset[disabled] .fr-label, .fr-fieldset:disabled .fr-label {
+  color: var(--g600-g400);
+}
+
+/* FIX BARRE NAV BLEUE */
+
+.fr-nav {
+  background-color: var(--highlight);
+}
+
+@media (max-width: 1000px) {
+  .fr-nav {
+    background-color: #FFF;
+  }
+}

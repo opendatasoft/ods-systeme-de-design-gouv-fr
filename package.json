@@ -1,0 +1,19 @@
+{
+  "name": "ods-systeme-de-design-gouv-fr",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "node-sass --watch --recursive --output export sass",
+    "build": "node-sass --recursive --output export sass && npx postcss export/main.css > export/ods-dsfr.min.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Opendatasoft",
+  "license": "MIT",
+  "dependencies": {
+    "@gouvfr/dsfr": "^1.1.0",
+    "cssnano": "^4.1.10",
+    "node-sass": "^6.0.1",
+    "postcss": "^7.0.35",
+    "postcss-cli": "^7.1.2"
+  }
+}
