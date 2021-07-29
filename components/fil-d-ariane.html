@@ -1,0 +1,23 @@
+<div class="fr-container" ng-init="arianecollapsed=true">
+    <nav role="navigation" class="fr-breadcrumb" aria-label="vous êtes ici :">
+        <button class="fr-breadcrumb__button"
+                ng-class="{'hidebreadcrumb': !arianecollapsed}"
+                aria-expanded="false"
+                aria-controls="breadcrumb-1"
+                ng-click="arianecollapsed=false">Voir le fil d'Ariane
+        </button>
+        <div ng-class="{'fr-collapse': arianecollapsed}" id="breadcrumb-1">
+            <ol class="fr-breadcrumb__list">
+                <li>
+                    <a class="fr-breadcrumb__link" href="/pages/accueil">Accueil</a>
+                </li>
+                <li>
+                    <a class="fr-breadcrumb__link" href="/pages/section1">Section1</a>
+                </li>
+                <li>
+                    <a class="fr-breadcrumb__link" href="/pages/detail">Details</a>
+                </li>
+            </ol>
+        </div>
+    </nav>
+</div>
