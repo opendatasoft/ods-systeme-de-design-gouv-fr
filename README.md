@@ -32,10 +32,18 @@ Save, make live.
 
 
 
-### Want to add style for a component not included yet?
+### How to add new style for a new component
 
 Find the name of the component in `node_modules/@gouvfr/dsfr/src/component`.
 
 Add the `@import` link to the component in the `main.scss` file.
 
 Example: `@import "../node_modules/@gouvfr/dsfr/src/component/summary/main"` will add the style for the component summary.
+
+Then re-run 
+
+````
+npm run build
+````
+
+And copy/paste again the content of the generated file [ods-dsfr.min.css](export/ods-dsfr.min.css) into your domain theme stylehseet.
