@@ -47,3 +47,10 @@ npm run build
 ````
 
 And copy/paste again the content of the generated file [ods-dsfr.min.css](export/ods-dsfr.min.css) into your domain theme stylehseet.
+
+
+### Use the header and footer
+
+Simply copy/paste the code from `header.html` and `footer.html` and paste it into your domain theme stylesheet.
+
+Save, make live.
