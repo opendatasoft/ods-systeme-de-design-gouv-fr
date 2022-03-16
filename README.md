@@ -34,5 +34,7 @@ Save, make live.
 ### Want to add style for a component not included yet?
 
 Find the name of the component in `node_modules/@gouvfr/dsfr/src/component`.
+
 Add the `@import` link to the component in the `main.scss` file.
+
 Example: `@import "../node_modules/@gouvfr/dsfr/src/component/summary/main"` will add the style for the component summary.
