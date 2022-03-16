@@ -21,6 +21,18 @@ input, select {
 border: none;
 }
 
+/* Fix tags de la search bar pour fonctionner avec ng-click*/
+div.fr-tag {
+  color: var(--text-action-high-blue-france);
+  --blend: var(--background-action-low-blue-france-blend);
+  background-color: var(--background-action-low-blue-france);
+}
+
+div.fr-tag:hover {
+  background-color: rgba(172, 172, 255, 0.5);
+  text-decoration: underline;
+}
+
 /**
  * Style d'un ensemble de champs
  */
