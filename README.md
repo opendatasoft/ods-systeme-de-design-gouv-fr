@@ -31,6 +31,7 @@ Copy the raw content and paste it into your domain theme stylesheet.
 Save, make live.
 
 
+
 ### Want to add style for a component not included yet?
 
 Find the name of the component in `node_modules/@gouvfr/dsfr/src/component`.
