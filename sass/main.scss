@@ -4,22 +4,28 @@
 
 /* Import dsfr, then necessary components */
 @import "../node_modules/@gouvfr/dsfr/src/core/main";
-@import "../node_modules/@gouvfr/dsfr/src/schemes/main";
-@import "../node_modules/@gouvfr/dsfr/src/inputs/main";
-@import "../node_modules/@gouvfr/dsfr/src/buttons/main";
-@import "../node_modules/@gouvfr/dsfr/src/search/main";
-@import "../node_modules/@gouvfr/dsfr/src/links/main";
-@import "../node_modules/@gouvfr/dsfr/src/highlights/main";
-@import "../node_modules/@gouvfr/dsfr/src/utilities/main";
-@import "../node_modules/@gouvfr/dsfr/src/checkboxes/main";
-@import "../node_modules/@gouvfr/dsfr/src/content/main";
-@import "../node_modules/@gouvfr/dsfr/src/radios/main";
-@import "../node_modules/@gouvfr/dsfr/src/inputs/main";
-@import "../node_modules/@gouvfr/dsfr/src/table/main";
-@import "../node_modules/@gouvfr/dsfr/src/navigation/main";
-@import "../node_modules/@gouvfr/dsfr/src/header/main";
-@import "../node_modules/@gouvfr/dsfr/src/footer/main";
-@import "../node_modules/@gouvfr/dsfr/src/breadcrumb/main";
-@import "../node_modules/@gouvfr/dsfr/src/summary/main";
+@import "../node_modules/@gouvfr/dsfr/src/scheme/main";
+@import "../node_modules/@gouvfr/dsfr/src/component/input/main";
+@import "../node_modules/@gouvfr/dsfr/src/component/button/main";
+@import "../node_modules/@gouvfr/dsfr/src/component/search/main";
+@import "../node_modules/@gouvfr/dsfr/src/component/link/main";
+@import "../node_modules/@gouvfr/dsfr/src/component/highlight/main";
+// @import "../node_modules/@gouvfr/dsfr/src/utilities/main";
+@import "../node_modules/@gouvfr/dsfr/src/component/checkbox/main";
+@import "../node_modules/@gouvfr/dsfr/src/component/content/main";
+@import "../node_modules/@gouvfr/dsfr/src/component/radio/main";
+@import "../node_modules/@gouvfr/dsfr/src/component/input/main";
+@import "../node_modules/@gouvfr/dsfr/src/component/table/main";
+@import "../node_modules/@gouvfr/dsfr/src/component/navigation/main";
+@import "../node_modules/@gouvfr/dsfr/src/component/header/main";
+@import "../node_modules/@gouvfr/dsfr/src/component/footer/main";
+@import "../node_modules/@gouvfr/dsfr/src/component/breadcrumb/main";
+@import "../node_modules/@gouvfr/dsfr/src/component/summary/main";
+@import "../node_modules/@gouvfr/dsfr/src/component/tag/main";
+@import "../node_modules/@gouvfr/dsfr/src/component/card/main";
+@import "../node_modules/@gouvfr/dsfr/src/component/toggle/main";
+
+
+
 
 @import "ods-dsfr-fix";

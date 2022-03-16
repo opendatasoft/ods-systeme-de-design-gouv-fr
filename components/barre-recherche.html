@@ -1,0 +1,53 @@
+<ods-dataset-context context="ctx" ctx-dataset="communes-et-arrondissements-municipaux-france" ctx-domain="userclub">
+    <div class="fr-container fr-mt-2v fr-mb-8v">
+        <div class="fr-grid-row fr-grid-row--center">
+            <div class="fr-col-md-8 fr-col-12">
+                <div class="fr-search-bar fr-search-bar--lg" id="search-2" role="search">
+                    <!-- <i class="fa fa-search search-bar-icon" aria-hidden="true"></i> -->
+                    <label class="fr-label" for="search-787-input">Rechercher une commune</label>
+                    <input class="fr-input" id="search-787-input" name="search-787-input" autocomplete="off"
+                        aria-label="search-787-input: taper quelques caractères pour lancer une recherche"
+                        aria-expanded="{{ ctx.parameters['q'] != undefined }}" aria-controls="search-results"
+                        placeholder="Exemples de recherche : Cae, Bordeaux, etc."
+                        ng-model="ctx.parameters['q']" ng-model-options="{ updateOn: 'default', debounce: 600 }"
+                        type="text" />
+                    <button class="fr-btn">
+                        Rechercher
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div ng-if="ctx.parameters['q']">
+        <div class="fr-container">
+            <div class="fr-grid-row fr-grid-row--center fr-mb-10v">
+                <div class="fr-col-12">
+                    <div class="search-results">
+                        <div class="fr-grid-row">
+                            <ul class="fr-tags-group" ods-results="results" ods-results-context="ctx"
+                                ods-results-max="20"
+                                aria-label="search-as-you-type results displayed here when a search is made"
+                                aria-live="polite" aria-atomic="true" aria-labelledby="search-as-you-type" role="group"
+                                id="search-results">
+                                <li ng-repeat="(i,item) in results" ng-if="i <= 19" role="listitem">
+                                    <a class="fr-tag"
+                                        ng-href="/pages/infosbeneficiaires?refine.id_beneficiaire={{item.fields.id_beneficiaire}}">
+                                        {{item.fields.com_name.toLowerCase() | capitalize}}
+                                        <span class="sr-only">Ouvrir la fiche bénéficiaire</span>
+                                    </a>
+                                </li>
+                                <li class="more-than-ten" role="listitem" ng-if="results.length > 19">
+                                    Plus de 20 résultats ({{ctx.nhits}} résultats). Continuer à affiner votre
+                                    recherche...
+                                </li>
+                            </ul>
+                            <p ng-if="ctx.nhits==0" class="no-results">
+                                Il n'y a pas de résultats pour votre recherche.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</ods-dataset-context>
