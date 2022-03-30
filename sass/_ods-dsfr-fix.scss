@@ -33,6 +33,30 @@ div.fr-tag:hover {
   text-decoration: underline;
 }
 
+/*onglets simple-tabs version dse*/
+.ods-simple-tabs-nav-link {
+  background-color: var(--background-action-low-blue-france);
+  color: #161616;
+  margin: 0 0.25rem;
+  font-weight: bold;
+  box-shadow: none;
+}
+.ods-simple-tabs-nav-link:hover {
+  background-color: #C7C7FA;
+  border-bottom-color: transparent;
+}
+.ods-simple-tabs-nav-link.ods-simple-tabs-nav-link-active {
+  color: var(--highlight);
+  background-color: #FFF;
+  border-top: 2px solid var(--highlight);
+  border-bottom: none;
+}
+
+.tab-content {
+  background-color: var(--background-contrast-grey);
+  padding: 20px;
+}
+
 /**
  * Style d'un ensemble de champs
  */

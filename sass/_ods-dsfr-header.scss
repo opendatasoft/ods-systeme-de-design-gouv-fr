@@ -1,0 +1,207 @@
+/**** HEADER ****/
+/**** HEADER - DESKTOP SPECIFIC (width >= breakpoint) 1000 by default *****/
+.ods-front-header:not(.ods-responsive-menu--collapsed) {
+    height: 200px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .ods-header-title-highlight {
+    color: var(--highlight);
+  }
+  
+  .portal-header-logo-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: left;
+    padding-top: 26px;
+    padding-bottom: 26px;
+    align-items: center;
+    gap: 20px;
+  }
+  .portal-header-logo-container a {
+    box-shadow: none;
+    text-decoration: none;
+  }
+  .portal-header-logo-container a:hover {
+    text-decoration: none;
+  }
+  
+  .nav-header {
+    width: 100%;
+    display: flex;
+    padding: 0px 100px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .ods-front-header__logo {
+    display: inline-block;
+    width: auto;
+    /* Logo width */
+    height: 80px;
+    /* Logo height */
+  }
+  
+  .border-bottom:not(.ods-responsive-menu--collapsed) {
+    border-bottom: 1px solid #f5eded;
+  }
+  
+  .management-menu {
+    position: absolute;
+    top: 0;
+    right: 20%;
+    line-height: 59px;
+    font-size: 0.833rem;
+  }
+  
+  .ods-front-header__menu {
+    margin: 0;
+  }
+  
+  .ods-front-header__management-menu-item {
+    border-right: 2px solid #e7e7e7;
+    padding: 0px 20px 2px 20px;
+    margin: 0;
+    background-color: #fff;
+    border-radius: 0px;
+  }
+  
+  .ods-front-header__management-menu-item:last-child {
+    border-right: none;
+  }
+  
+  .ods-front-header__management-menu-item-link {
+    color: var(--highlight);
+    padding: 3.5px 10.5px;
+  }
+  .ods-front-header__management-menu-item-link:not(.ods-responsive-menu--collapsed):hover {
+    background: rgba(0, 0, 0, 0.04);
+    border-bottom: none;
+    border-radius: 14px;
+  }
+  
+  .ods-front-header__menu-item-link {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 400;
+    display: inline-block;
+    line-height: 58px;
+    color: var(--text);
+    height: 61px;
+    opacity: 1;
+  }
+  .ods-front-header__menu-item-link:hover {
+    background: rgba(0, 0, 0, 0.04);
+    color: var(--text);
+  }
+  
+  .ods-front-header__menu-item-link--active {
+    color: var(--highlight);
+    border-bottom: 3px solid var(--highlight);
+  }
+  
+  /*** HEADER - DESKTOP SPECIFIC - END ***/
+
+  /****** HEADER - MOBILE SPECIFIC *******/
+  .ods-responsive-menu--collapsed .ods-responsive-menu-placeholder__container {
+    height: 120px;
+    text-align: left;
+  }
+  .ods-responsive-menu--collapsed .ods-responsive-menu-placeholder .ods-front-header__portal-brand {
+    display: flex;
+    height: 40px;
+    top: 10px;
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+  }
+  .ods-responsive-menu--collapsed .ods-responsive-menu-placeholder__toggle {
+    color: #1E1E1E;
+    opacity: 1;
+    background-color: #FFF;
+  }
+  
+  /****** HEADER - MOBILE SPECIFIC, Hamburger menu EXPANDED/OPENED *******/
+  .ods-responsive-menu-collapsible--expanded .portal-header-logo-container {
+    display: none;
+  }
+  .ods-responsive-menu-collapsible--expanded .ods-responsive-menu-collapsible__content {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .ods-responsive-menu-collapsible--expanded .ods-front-header__menu {
+    width: 100%;
+  }
+  .ods-responsive-menu-collapsible--expanded .ods-front-header__menu-item {
+    border-bottom: 1px solid #f5eded;
+  }
+  .ods-responsive-menu-collapsible--expanded .ods-front-header__menu-item-link {
+    font-weight: 700;
+    color: #1e1e1e;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+  }
+  .ods-responsive-menu-collapsible--expanded .ods-front-header__menu-item-link:hover {
+    color: var(--highlight);
+    border-bottom: 0px transparent;
+  }
+  .ods-responsive-menu-collapsible--expanded .ods-front-header__management-menu {
+    padding: 0;
+  }
+  .ods-responsive-menu-collapsible--expanded .ods-front-header__management-menu-item {
+    padding: 15px 0px;
+    border-right: none;
+    border-bottom: 1px solid #f5eded;
+    margin: 0;
+    font-size: 1rem;
+  }
+  .ods-responsive-menu-collapsible--expanded .ods-front-header__management-menu-item-link {
+    color: #6a6a6a;
+    font-size: 1rem;
+    padding: 0px 10px;
+  }
+  .ods-responsive-menu-collapsible--expanded .ods-front-header__management-menu-item-link:hover {
+    color: var(--highlight);
+    background-image: none;
+    text-decoration: none;
+  }
+  .ods-responsive-menu-collapsible--expanded .ods-front-header__management-menu-item-link i {
+    font-size: 1rem;
+  }
+  .ods-responsive-menu-collapsible--expanded .ods-front-header__management-menu-item-link:not(.ods-front-header__management-menu-item-link--backoffice) {
+    border-bottom: none;
+  }
+  .ods-responsive-menu-collapsible--expanded .ods-front-header__account-avatar-container {
+    width: 18px;
+    height: 18px;
+  }
+  .ods-responsive-menu-collapsible--expanded .ods-front-header__account-avatar {
+    height: 18px;
+    width: 18px;
+  }
+  .ods-responsive-menu-collapsible--expanded button.ods-responsive-menu-collapsible__toggle-button:before {
+    content: "Fermer";
+    color: var(--highlight);
+    font-size: 1rem;
+  }
+  .ods-responsive-menu-collapsible--expanded .ods-responsive-menu-collapsible__toggle {
+    margin-bottom: 0;
+  }
+  .ods-responsive-menu-collapsible--expanded .ods-responsive-menu-collapsible__toggle-button {
+    color: var(--highlight);
+  }
+  .ods-responsive-menu-collapsible--expanded .fix-mobile {
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+  
+  /*** HEADER - MOBILE SPECIFIC, Hamburger menu EXPANDED/OPENED - END ****/
+  /**** End of HEADER ****/
+
