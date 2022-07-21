@@ -1,0 +1,22 @@
+<dialog class="ods-pop-in"
+        ng-if="pop.state"
+        aria-labelledby="fr-modal-title-modal-1" role="dialog" id="fr-modal-1">
+    <div class="ods-pop-in__container fr-container fr-container--fluid fr-container-md">
+        <div class="fr-grid-row fr-grid-row--center">
+            <div class="fr-col-12 fr-col-md-12 fr-col-lg-12">
+                <div class="fr-modal__body">
+                    <div class="fr-modal__header">
+                        <button class="fr-link--close fr-link" title="Fermer" aria-controls="fr-modal-1"
+                                ng-click="pop.state=false">Fermer</button>
+                    </div>
+                    <div class="fr-modal__content">
+                        <h1 id="fr-modal-title-modal-1" class="fr-modal__title"><span
+                                  class="fr-fi-arrow-right-line fr-fi--lg" aria-hidden="true"></span>Titre</h1>
+                        <p>Contenu</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ods-pop-in__backdrop" ng-click="pop.state = false"></div>
+</dialog>

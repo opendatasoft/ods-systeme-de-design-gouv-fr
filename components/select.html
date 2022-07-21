@@ -1,0 +1,17 @@
+<div class="fr-select-group select-group-fix"
+     ods-adv-analysis="analysis"
+     ods-adv-analysis-context="ctx"
+     ods-adv-analysis-group-by="fieldid"
+     ods-adv-analysis-select="count(*) as count"
+     ods-adv-analysis-order-by="count"
+     ods-adv-analysis-limit="100">
+    <ods-select class="fr-select select-fix"
+                id="select" 
+                name="select"
+                options="analysis"
+                selected-values="selected"
+                label-modifier="fieldid + ', Nombre: ' + count"
+                value-modifier="fieldid"
+                placeholder="Sélectionnez une valeur">
+    </ods-select>
+</div>
