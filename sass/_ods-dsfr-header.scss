@@ -42,7 +42,7 @@
     display: inline-block;
     width: auto;
     /* Logo width */
-    height: 80px;
+    height: 150% !important;
     /* Logo height */
   }
   
@@ -108,8 +108,16 @@
 
   /****** HEADER - MOBILE SPECIFIC *******/
   .ods-responsive-menu--collapsed .ods-responsive-menu-placeholder__container {
-    height: 120px;
-    text-align: left;
+    position: fixed;
+    top: 0;
+    right: -270px;
+    bottom: 0;
+    background-color: #FFF;
+    width: 270px;
+    z-index: 1020;
+    -webkit-transition: right .5s,left .5s;
+    transition: right .5s,left .5s;
+    overflow-y: auto;
   }
   .ods-responsive-menu--collapsed .ods-responsive-menu-placeholder .ods-front-header__portal-brand {
     display: flex;
@@ -118,12 +126,19 @@
     position: relative;
     flex-direction: column;
     align-items: flex-start;
-    width: 50%;
+    width: 100%;
   }
   .ods-responsive-menu--collapsed .ods-responsive-menu-placeholder__toggle {
     color: #1E1E1E;
     opacity: 1;
     background-color: #FFF;
+  }
+
+  .fr-header__service-title {
+    border-top: 1px solid #f5eded;
+    width: 100%;
+    margin-top: 15px;
+    padding-top: 5px;
   }
   
   /****** HEADER - MOBILE SPECIFIC, Hamburger menu EXPANDED/OPENED *******/
