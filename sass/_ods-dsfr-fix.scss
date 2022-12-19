@@ -2,11 +2,6 @@
   * FIX Design d'état conflict
 */
 
-:focus,
-:focus-visible {
-  z-index: inherit !important;
-}
-
 .odswidget-facet__category-container ol,
 ol > li,
 ul,
