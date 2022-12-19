@@ -107,18 +107,7 @@
   /*** HEADER - DESKTOP SPECIFIC - END ***/
 
   /****** HEADER - MOBILE SPECIFIC *******/
-  .ods-responsive-menu--collapsed .ods-responsive-menu-placeholder__container {
-    position: fixed;
-    top: 0;
-    right: -270px;
-    bottom: 0;
-    background-color: #FFF;
-    width: 270px;
-    z-index: 1020;
-    -webkit-transition: right .5s,left .5s;
-    transition: right .5s,left .5s;
-    overflow-y: auto;
-  }
+
   .ods-responsive-menu--collapsed .ods-responsive-menu-placeholder .ods-front-header__portal-brand {
     display: flex;
     height: 40px;
@@ -126,7 +115,7 @@
     position: relative;
     flex-direction: column;
     align-items: flex-start;
-    width: 100%;
+    width: 95%;
   }
   .ods-responsive-menu--collapsed .ods-responsive-menu-placeholder__toggle {
     color: #1E1E1E;
@@ -134,14 +123,19 @@
     background-color: #FFF;
   }
 
-  .fr-header__service-title {
+  .ods-responsive-menu--collapsed .fr-header__service-title {
     border-top: 1px solid #f5eded;
     width: 100%;
     margin-top: 15px;
     padding-top: 5px;
   }
+
+  .ods-responsive-menu-collapsible--collapsed .ods-responsive-menu-collapsible__container{
+    background-color: #FFF;
+}
   
   /****** HEADER - MOBILE SPECIFIC, Hamburger menu EXPANDED/OPENED *******/
+
   .ods-responsive-menu-collapsible--expanded .portal-header-logo-container {
     display: none;
   }
