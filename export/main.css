@@ -15195,7 +15195,7 @@ dialog {
   display: inline-block;
   width: auto;
   /* Logo width */
-  height: 150% !important;
+  height: 90px;
   /* Logo height */
 }
 
@@ -15261,6 +15261,12 @@ dialog {
 
 /*** HEADER - DESKTOP SPECIFIC - END ***/
 /****** HEADER - MOBILE SPECIFIC *******/
+.ods-responsive-menu--collapsed .ods-responsive-menu-placeholder__container {
+  height: 120px;
+  text-align: left;
+  padding: 10px 20px;
+}
+
 .ods-responsive-menu--collapsed .ods-responsive-menu-placeholder .ods-front-header__portal-brand {
   display: flex;
   height: 40px;
@@ -15281,7 +15287,7 @@ dialog {
   border-top: 1px solid #f5eded;
   width: 100%;
   margin-top: 15px;
-  padding-top: 5px;
+  padding-top: 10px;
 }
 
 .ods-responsive-menu-collapsible--collapsed .ods-responsive-menu-collapsible__container {
