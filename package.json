@@ -12,10 +12,12 @@
   "dependencies": {
     "8": "0.0.1",
     "10": "0.0.1",
-    "@gouvfr/dsfr": "^1.6.0",
+    "@gouvfr/dsfr": "^1.9.3",
     "cssnano": "^5.1.12",
-    "postcss": "^8.4.14",
-    "postcss-cli": "^10.0.0",
-    "sass": "^1.53.0"
+    "sass": "^1.63.3"
+  },
+  "devDependencies": {
+    "postcss": "^8.4.24",
+    "postcss-cli": "^10.1.0"
   }
 }
