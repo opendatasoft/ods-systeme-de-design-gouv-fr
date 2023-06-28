@@ -21,15 +21,31 @@ While you have node / npm / postcss-cli installed globally, simply run :
 npm run build
 ```
 
+### Replace the svg paths with /assets/theme_image/
+
+Get this already generated file [ods-dsfr.min.css](export/ods-dsfr.min.css)
+
+Replace the paths through a find and replace with these caracters:
+
+1. Find `../../(.*.)/` replace by `/assets/theme_image/`
+
+2. Find `../(.*.)/` replace by `/assets/theme_image/`
+
+And save
+
 
 ### Get dsfr into your domain
 
-Get this already generated file [ods-dsfr.min.css](export/ods-dsfr.min.css)
+Get the file [ods-dsfr.min.css](export/ods-dsfr.min.css)
 
 Copy the raw content and paste it into your domain theme stylesheet.
 
 Save, make live.
 
+
+## Add icons to your domain
+
+Get the icons you want to use from `/assets/theme_image/ and copy/paste theme in the Ressources in your domain
 
 
 ### How to add new style for a new component
