@@ -27,9 +27,9 @@ Get this already generated file [ods-dsfr.min.css](export/ods-dsfr.min.css)
 
 Replace the paths through a find and replace with these caracters:
 
-1. Find `../../(.*.)/` replace by `/assets/theme_image/`
+1. Find `../../(.*?)/` replace by `/assets/theme_image/`
 
-2. Find `../(.*.)/` replace by `/assets/theme_image/`
+2. Find `../(.*?)/` replace by `/assets/theme_image/`
 
 And save
 
@@ -45,7 +45,7 @@ Save, make live.
 
 ## Add icons to your domain
 
-Get the icons you want to use from `/assets/theme_image/ and copy/paste theme in the Ressources in your domain
+Get the icons you want to use from `/assets/theme_image/` and copy/paste theme in the Ressources in your domain
 
 
 ### How to add new style for a new component
@@ -61,6 +61,8 @@ Then re-run
 ````
 npm run build
 ````
+
+Do a find a replace again to replace images' paths.
 
 And copy/paste again the content of the generated file [ods-dsfr.min.css](export/ods-dsfr.min.css) into your domain theme stylehseet.
 
