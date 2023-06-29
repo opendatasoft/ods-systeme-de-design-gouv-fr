@@ -119,9 +119,9 @@
     height: 40px;
     top: 10px;
     position: relative;
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
-    width: 95%;
+    width: 95%; 
   }
   .ods-responsive-menu--collapsed .ods-responsive-menu-placeholder__toggle {
     color: #1E1E1E;
@@ -138,6 +138,10 @@
 
   .ods-responsive-menu-collapsible--collapsed .ods-responsive-menu-collapsible__container{
     background-color: #FFF;
+}
+
+.ods-responsive-menu-collapsible--collapsed.fr-header__service {
+    box-shadow: none;
 }
   
   /****** HEADER - MOBILE SPECIFIC, Hamburger menu EXPANDED/OPENED *******/

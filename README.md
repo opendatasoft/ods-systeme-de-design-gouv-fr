@@ -24,12 +24,16 @@ npm run build
 
 ### Get dsfr into your domain
 
-Get this already generated file [ods-dsfr.min.css](export/ods-dsfr.min.css)
+Get this already generated file [ods-dsfr.min.css](export/ods-dsfr.min.css).
 
 Copy the raw content and paste it into your domain theme stylesheet.
 
 Save, make live.
 
+
+## Add icons to your domain
+
+Get the icons you want to use from `/assets/theme_image/` and copy/paste theme in the Ressources in your domain
 
 
 ### How to add new style for a new component
@@ -45,6 +49,8 @@ Then re-run
 ````
 npm run build
 ````
+
+Do a find a replace again to replace images' paths.
 
 And copy/paste again the content of the generated file [ods-dsfr.min.css](export/ods-dsfr.min.css) into your domain theme stylehseet.
 
