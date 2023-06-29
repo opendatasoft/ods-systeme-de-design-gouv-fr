@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "dev": "npx sass sass/:export/ --watch",
-    "build": "npx sass --no-source-map sass/:export/ && npx postcss export/main.css > export/ods-dsfr.min.css",
+    "build": "npx sass --no-source-map sass/:export/ && node fix_paths.js export/main.css && npx postcss export/main.css > export/ods-dsfr.min.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Opendatasoft",
