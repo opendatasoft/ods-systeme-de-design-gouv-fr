@@ -159,7 +159,7 @@
 @import "../node_modules/@gouvfr/dsfr/src/component/search/main";
 @import "../node_modules/@gouvfr/dsfr/src/component/link/main";
 @import "../node_modules/@gouvfr/dsfr/src/component/highlight/main";
-// @import "../node_modules/@gouvfr/dsfr/src/utilities/main";
+@import "../node_modules/@gouvfr/dsfr/src/utilities/main";
 @import "../node_modules/@gouvfr/dsfr/src/component/checkbox/main";
 @import "../node_modules/@gouvfr/dsfr/src/component/content/main";
 @import "../node_modules/@gouvfr/dsfr/src/component/radio/main";
@@ -176,6 +176,9 @@
 @import "../node_modules/@gouvfr/dsfr/src/component/modal/main";
 @import "../node_modules/@gouvfr/dsfr/src/component/select/main";
 @import "../node_modules/@gouvfr/dsfr/src/component/badge/main";
+@import "../node_modules/@gouvfr/dsfr/src/component/tile/main";
+@import "../node_modules/@gouvfr/dsfr/src/component/callout/main";
+
 
 @import "ods-dsfr-fix";
 

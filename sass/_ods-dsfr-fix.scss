@@ -283,3 +283,14 @@ dialog {
     box-shadow: none;
   }
 }
+
+/** FIX hover barre de nav ****/
+.ods-front-header__menu-item-link:hover {
+    background: rgba(0, 0, 0, 0.04) !important;
+    color: #333333;
+}
+
+/** FIX hover mot cles cartes catalogue **/ 
+.ods-catalog-card__keyword:hover {
+    background-color: var(--highlight);
+}
