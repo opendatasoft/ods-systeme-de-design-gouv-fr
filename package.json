@@ -1,10 +1,10 @@
 {
   "name": "ods-systeme-de-design-gouv-fr",
-  "version": "1.0.0",
+  "version": "1.10.1",
   "description": "",
   "scripts": {
     "dev": "npx sass sass/:export/ --watch",
-    "build": "npx sass --no-source-map sass/:export/ && node fix_paths.js export/main.css && npx postcss export/main.css > export/ods-dsfr.min.css",
+    "build": "npx sass --no-source-map sass/:export/ -I node_modules/@gouvfr/dsfr/ && node fix_paths.js export/main.css && npx postcss export/main.css > export/ods-dsfr.min.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Opendatasoft",
