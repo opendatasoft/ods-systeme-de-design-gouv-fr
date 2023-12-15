@@ -117,6 +117,32 @@ div.fr-tag:hover {
 }
 
 /*onglets simple-tabs version dse*/
+.ods-simple-tabs-nav-link {
+  background-color: var(--background-action-low-blue-france);
+  box-shadow: none;
+  color: #161616;
+  font-weight: 700;
+  margin: 0 0.25rem;
+}
+
+.ods-simple-tabs-nav-link:hover {
+  background-color: var(--background-action-low-blue-france-hover) !important;
+  border-bottom-color: transparent;
+}
+
+.ods-simple-tabs-nav-link.ods-simple-tabs-nav-link-active {
+  border-top: 2px solid var(--blue-france-sun-113-625);
+  background: #fff;
+  border-left: 1px solid var(--border-default-grey);
+  border-right: 1px solid var(--border-default-grey);
+  color: var(--blue-france-sun-113-625);
+  border-bottom: none;
+}
+
+.tab-content {
+  padding: 20px;
+}
+
 .ods-simple-tabs-content {
   padding: 10px;
   border: 1px solid var(--border-default-grey);
@@ -128,17 +154,6 @@ div.fr-tag:hover {
   margin-bottom: 0px;
 }
 
-.ods-simple-tabs-nav-link.ods-simple-tabs-nav-link-active {
-  border-top: 2px solid var(--blue-france-sun-113-625);
-  background: #fff;
-  border-left: 1px solid var(--border-default-grey);
-  border-right: 1px solid var(--border-default-grey);
-  color: var(--blue-france-sun-113-625);
-}
-
-.ods-simple-tabs-nav-link:hover {
-  background-color: var(--background-action-low-blue-france-hover) !important;
-}
 /**
  * Style d'un ensemble de champs
  */
@@ -325,4 +340,14 @@ dialog {
 .ods-button--primary:hover {
   opacity: 0.6;
   background-color: var(--titles) !important;
+}
+
+/***** FIX FOOTER *****/
+.fr-footer__content {
+  text-align: left;
+}
+
+/***** FIX HREF *****/
+[href] {
+  background-image: none !important;
 }
