@@ -326,3 +326,8 @@ dialog {
   opacity: 0.6;
   background-color: var(--titles) !important;
 }
+
+/***** FIX FOOTER *****/
+.fr-footer__content {
+  text-align: left;
+}
