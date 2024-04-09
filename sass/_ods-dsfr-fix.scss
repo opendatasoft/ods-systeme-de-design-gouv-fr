@@ -348,4 +348,18 @@ dialog {
 }
 
 
+/***** FIX HREF et a *****/
 
+[href].ods-catalog-card__keyword, [href].ods-tabs__tab.ods-tabs__tab--horizontal, .ods-catalog-card__visualization[href],
+.ods-dataset-visualization__edit-dataset-link[href],
+.ods-button.ods-mapbuilder__add-first-dataset-button[href],
+.ods-page-legacy .btn.ods-mapbuilder__add-first-dataset-button[href],
+.ods-button--primary[href],
+.ods-catalog-card__keyword[href],
+.ods-tabs__tab.ods-tabs__tab--simple-nav[href]{
+    background-image: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
