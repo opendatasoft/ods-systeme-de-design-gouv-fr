@@ -1,12 +1,16 @@
 const fs = require('fs');
 const path = require('path');
 
-function replaceInFile(filePath, regex, replacement) {
+function replaceInFile(filePath, replacements) {
     fs.readFile(filePath, 'utf8', function(err, data) {
         if (err) {
             return console.log(err);
         }
-        let result = data.replace(regex, replacement);
+
+        let result = data;
+        replacements.forEach(({ regex, replacement }) => {
+            result = result.replace(regex, replacement);
+        });
 
         fs.writeFile(filePath, result, 'utf8', function(err) {
             if (err) {
@@ -23,7 +27,16 @@ if (!filePath) {
     process.exit(1);
 }
 
-const regex = /[\.\/a-zA-Z0-9_-]*\/([a-zA-Z0-9_-]*\.svg)/g;
-const replacement = '/assets/theme_image/$1';
+// Define replacement rules
+const replacements = [
+    {
+        regex: /[\.\/a-zA-Z0-9_-]*\/([a-zA-Z0-9_-]*\.svg)/g,
+        replacement: '/assets/theme_image/$1',
+    },
+    {
+        regex: /url\(\"\.\.\/fonts\/([a-zA-Z0-9_-]*\.[a-zA-Z0-9_-]*)\"\)/g,
+        replacement: 'url("/assets/theme_font/$1")',
+    },
+];
 
-replaceInFile(filePath, regex, replacement);
+replaceInFile(filePath, replacements);
