@@ -229,7 +229,7 @@ dialog {
     align-items: center;
 }
 
-.switch-container   p {
+.switch-container p {
     margin: 0;
 }
 
@@ -239,14 +239,17 @@ dialog {
         gap: 0px;
     }
     .mobile-switch p {
-    margin-bottom: 5px;
-}
+        margin-bottom: 5px;
+    }
 }
 
 .switch-options {
     display: flex;
     gap: 5px;
     align-items: center;
+    .gras {
+        font-weight: 700;
+    }
 }
 
 .fr-toggle label {
@@ -267,7 +270,7 @@ dialog {
     height: 1.7rem;
 }
 
-.fr-toggle input[type=checkbox]:checked ~ .fr-toggle__label::after {
+.fr-toggle input[type="checkbox"]:checked ~ .fr-toggle__label::after {
     transform: translateX(1.2rem);
 }
 

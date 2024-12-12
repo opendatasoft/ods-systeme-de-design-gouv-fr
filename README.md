@@ -36,6 +36,7 @@ Save, make live.
 Get the icons you want to use from `/assets/theme_image/` and copy/paste theme in the Ressources in your domain.
 
 WARINING: You must add the icon `arrow-right-s-line.svg` to your domain in order to use the breadcrumb.
+WARINING 2: You must add the icon `check-line.svg` to your domain in order to use the toggle.
 
 
 ### How to add new style for a new component

@@ -32126,15 +32126,55 @@ dialog {
 }
 
 /* SWITCH */
+/***** SWITCH *****/
+.switch-container {
+  display: inline-flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.switch-container p {
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .mobile-switch {
+    flex-direction: column;
+    gap: 0px;
+  }
+  .mobile-switch p {
+    margin-bottom: 5px;
+  }
+}
 .switch-options {
   display: flex;
   gap: 5px;
   align-items: center;
 }
+.switch-options .gras {
+  font-weight: 700;
+}
 
 .fr-toggle label {
   padding-left: 0.5rem;
   margin-bottom: 0;
+  width: auto;
+}
+
+.fr-toggle label::before {
+  min-width: 3.5rem;
+  max-width: 3.5rem;
+  margin-right: 0.5rem;
+}
+
+.fr-toggle label::after {
+  left: 7px;
+  width: 1.7rem;
+  height: 1.7rem;
+}
+
+.fr-toggle input[type=checkbox]:checked ~ .fr-toggle__label::after {
+  transform: translateX(1.2rem);
 }
 
 /** FIX hover barre de nav ****/
