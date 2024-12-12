@@ -31926,77 +31926,6 @@ select {
   border: none;
 }
 
-/* FIX font-face qui n'appelle pas au bon endroit */
-@font-face {
-  font-display: swap;
-  font-family: Marianne;
-  font-style: normal;
-  font-weight: 300;
-  src: url(/assets/theme_font/Marianne-Light.woff2) format("woff2"), url(/assets/theme_font/Marianne-Light.woff) format("woff");
-}
-@font-face {
-  font-display: swap;
-  font-family: Marianne;
-  font-style: italic;
-  font-weight: 300;
-  src: url(/assets/theme_font/Marianne-Light_Italic.woff2) format("woff2"), url(/assets/theme_font/Marianne-Light_Italic.woff) format("woff");
-}
-@font-face {
-  font-display: swap;
-  font-family: Marianne;
-  font-style: normal;
-  font-weight: 400;
-  src: url(/assets/theme_font/Marianne-Regular.woff2) format("woff2"), url(/assets/theme_font/Marianne-Regular.woff) format("woff");
-}
-@font-face {
-  font-display: swap;
-  font-family: Marianne;
-  font-style: italic;
-  font-weight: 400;
-  src: url(/assets/theme_font/Marianne-Regular_Italic.woff2) format("woff2"), url(/assets/theme_font/Marianne-Regular_Italic.woff) format("woff");
-}
-@font-face {
-  font-display: swap;
-  font-family: Marianne;
-  font-style: normal;
-  font-weight: 500;
-  src: url(/assets/theme_font/Marianne-Medium.woff2) format("woff2"), url(/assets/theme_font/Marianne-Medium.woff) format("woff");
-}
-@font-face {
-  font-display: swap;
-  font-family: Marianne;
-  font-style: italic;
-  font-weight: 500;
-  src: url(/assets/theme_font/Marianne-Medium_Italic.woff2) format("woff2"), url(/assets/theme_font/Marianne-Medium_Italic.woff) format("woff");
-}
-@font-face {
-  font-display: swap;
-  font-family: Marianne;
-  font-style: normal;
-  font-weight: 700;
-  src: url(/assets/theme_font/Marianne-Bold.woff2) format("woff2"), url(/assets/theme_font/Marianne-Bold.woff) format("woff");
-}
-@font-face {
-  font-display: swap;
-  font-family: Marianne;
-  font-style: italic;
-  font-weight: 700;
-  src: url(/assets/theme_font/Marianne-Bold_Italic.woff2) format("woff2"), url(/assets/theme_font/Marianne-Bold_Italic.woff) format("woff");
-}
-@font-face {
-  font-display: swap;
-  font-family: Spectral;
-  font-style: normal;
-  font-weight: 400;
-  src: url(/assets/theme_font/Spectral-Regular.woff2) format("woff2"), url(/assets/theme_font/Spectral-Regular.woff) format("woff");
-}
-@font-face {
-  font-display: swap;
-  font-family: Spectral;
-  font-style: normal;
-  font-weight: 900;
-  src: url(/assets/theme_font/Spectral-ExtraBold.woff2) format("woff2"), url(/assets/theme_font/Spectral-ExtraBold.woff) format("woff");
-}
 /* Fix tags de la search bar pour fonctionner avec ng-click*/
 div.fr-tag {
   color: var(--text-action-high-blue-france);
@@ -32056,8 +31985,8 @@ div.fr-tag:hover {
   padding: 0;
   border: 0;
   /**
-   * Modificateur pour afficher les éléments en inline
-   */ /**
+  * Modificateur pour afficher les éléments en inline
+  */ /**
 * Modificateur pour gérer l'état d'erreur
 */ /**
 * Modificateur pour gérer l'état de validation
@@ -32196,6 +32125,18 @@ dialog {
   box-shadow: none;
 }
 
+/* SWITCH */
+.switch-options {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.fr-toggle label {
+  padding-left: 0.5rem;
+  margin-bottom: 0;
+}
+
 /** FIX hover barre de nav ****/
 .ods-front-header__menu-item-link:hover {
   background: rgba(0, 0, 0, 0.04) !important;
@@ -32240,7 +32181,9 @@ dialog {
 }
 
 /***** FIX HREF et a *****/
-[href].ods-catalog-card__keyword, [href].ods-tabs__tab.ods-tabs__tab--horizontal, .ods-catalog-card__visualization[href],
+[href].ods-catalog-card__keyword,
+[href].ods-tabs__tab.ods-tabs__tab--horizontal,
+.ods-catalog-card__visualization[href],
 .ods-dataset-visualization__edit-dataset-link[href],
 .ods-button.ods-mapbuilder__add-first-dataset-button[href],
 .ods-page-legacy .btn.ods-mapbuilder__add-first-dataset-button[href],

@@ -6,69 +6,69 @@
 ol > li,
 ul,
 ul > li {
-  padding-bottom: var(--is-list) 0rem;
+    padding-bottom: var(--is-list) 0rem;
 }
 
 /*conflits avec les barres de recherches et inputs sur le portail*/
 input,
 select {
-  background-color: #fff;
-  appearance: auto;
-  border: 1px solid #ccc;
+    background-color: #fff;
+    appearance: auto;
+    border: 1px solid #ccc;
 }
 
 .fr-input {
-  border: none;
+    border: none;
 }
 
 /* Fix tags de la search bar pour fonctionner avec ng-click*/
 div.fr-tag {
-  color: var(--text-action-high-blue-france);
-  --blend: var(--background-action-low-blue-france-blend);
-  background-color: var(--background-action-low-blue-france);
+    color: var(--text-action-high-blue-france);
+    --blend: var(--background-action-low-blue-france-blend);
+    background-color: var(--background-action-low-blue-france);
 }
 
 div.fr-tag:hover {
-  background-color: rgba(172, 172, 255, 0.5);
-  text-decoration: underline;
+    background-color: rgba(172, 172, 255, 0.5);
+    text-decoration: underline;
 }
 
 /*onglets simple-tabs version dse*/
 .ods-simple-tabs-nav-link {
-  background-color: var(--background-action-low-blue-france);
-  box-shadow: none;
-  color: #161616;
-  font-weight: 700;
-  margin: 0 0.25rem;
+    background-color: var(--background-action-low-blue-france);
+    box-shadow: none;
+    color: #161616;
+    font-weight: 700;
+    margin: 0 0.25rem;
 }
 
 .ods-simple-tabs-nav-link:hover {
-  background-color: var(--background-action-low-blue-france-hover) !important;
-  border-bottom-color: transparent;
+    background-color: var(--background-action-low-blue-france-hover) !important;
+    border-bottom-color: transparent;
 }
 
 .ods-simple-tabs-nav-link.ods-simple-tabs-nav-link-active {
-  border-top: 2px solid var(--blue-france-sun-113-625);
-  background: #fff;
-  border-left: 1px solid var(--border-default-grey);
-  border-right: 1px solid var(--border-default-grey);
-  color: var(--blue-france-sun-113-625);
-  border-bottom: none;
+    border-top: 2px solid var(--blue-france-sun-113-625);
+    background: #fff;
+    border-left: 1px solid var(--border-default-grey);
+    border-right: 1px solid var(--border-default-grey);
+    color: var(--blue-france-sun-113-625);
+    border-bottom: none;
 }
 
 .tab-content {
-  padding: 20px;
+    padding: 20px;
 }
 
 .ods-simple-tabs-content {
-  padding: 10px;
-  border: 1px solid var(--border-default-grey);
-  background-color: #fff;
-  margin-top: -1px;
+    padding: 10px;
+    border: 1px solid var(--border-default-grey);
+    background-color: #fff;
+    margin-top: -1px;
 }
 
 .ods-simple-tabs-nav {
-  margin-bottom: 0px;
+    margin-bottom: 0px;
 }
 
 /**
@@ -76,11 +76,11 @@ div.fr-tag:hover {
  */
 
 .fr-fieldset {
-  position: relative;
-  margin: 0;
-  padding: 0;
-  border: 0;
-  /**
+    position: relative;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    /**
    * Modificateur pour afficher les éléments en inline
    */ /**
    * Modificateur pour gérer l'état d'erreur
@@ -92,189 +92,240 @@ div.fr-tag:hover {
 }
 
 .fr-fieldset .fr-hint-text {
-  margin-bottom: 1rem;
+    margin-bottom: 1rem;
 }
 
 .fr-fieldset__legend {
-  margin-bottom: 1rem;
-  font-size: 1rem;
-  line-height: 1.5rem;
-  font-weight: 700;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 700;
 }
 
 .fr-fieldset__legend .fr-hint-text {
-  margin-top: 0.5rem;
-  margin-bottom: 0;
-  font-weight: 400;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+    font-weight: 400;
 }
 
 .fr-fieldset__content {
-  position: relative;
+    position: relative;
 }
 
 .fr-fieldset--inline .fr-fieldset__content {
-  display: flex;
-  align-items: baseline;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  margin: -0.75rem 0;
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: -0.75rem 0;
 }
 
 .fr-fieldset--inline .fr-checkbox-group {
-  display: inline-flex;
-  margin-bottom: 0;
+    display: inline-flex;
+    margin-bottom: 0;
 }
 
 .fr-fieldset--inline .fr-checkbox-group:first-child {
-  margin-top: 0;
+    margin-top: 0;
 }
 
 .fr-fieldset--inline .fr-checkbox-group:not(:last-child) {
-  margin-right: 1.25rem;
+    margin-right: 1.25rem;
 }
 
 .fr-fieldset--inline .fr-checkbox-group:last-child {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 .fr-fieldset--inline .fr-radio-group {
-  display: inline-flex;
+    display: inline-flex;
 }
 
-.fr-fieldset--inline
-  .fr-radio-group:not(:last-child)
-  input[type="radio" i]
-  + label {
-  margin-right: 1.75rem;
+.fr-fieldset--inline .fr-radio-group:not(:last-child) input[type="radio" i] + label {
+    margin-right: 1.75rem;
 }
 
 .fr-fieldset--inline .fr-radio-group:first-child {
-  margin-top: 0;
+    margin-top: 0;
 }
 
 .fr-fieldset--inline .fr-radio-group:first-child input[type="radio" i] + label {
-  margin-top: 0;
+    margin-top: 0;
 }
 
 .fr-fieldset--inline .fr-radio-group:last-child {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 .fr-fieldset--inline .fr-radio-group:last-child input[type="radio" i] + label {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 .fr-fieldset--error .fr-fieldset__content::before {
-  content: "";
-  position: absolute;
-  top: 0.75rem;
-  bottom: 0.75rem;
-  left: -0.5rem;
-  width: 2px;
+    content: "";
+    position: absolute;
+    top: 0.75rem;
+    bottom: 0.75rem;
+    left: -0.5rem;
+    width: 2px;
 }
 
 .fr-fieldset--valid .fr-fieldset__content::before {
-  content: "";
-  position: absolute;
-  top: 0.75rem;
-  bottom: 0.75rem;
-  left: -0.5rem;
-  width: 2px;
+    content: "";
+    position: absolute;
+    top: 0.75rem;
+    bottom: 0.75rem;
+    left: -0.5rem;
+    width: 2px;
 }
 
 .fr-fieldset[disabled] .fr-label,
 .fr-fieldset:disabled .fr-label {
-  color: var(--g600-g400);
+    color: var(--g600-g400);
 }
 
 /* ods-select */
 .select-group-fix {
-  .select-fix {
-    background-image: none;
-    padding: 2px;
-    min-width: 200px;
-    .odswidget-select-button {
-      background: var(--background-contrast-grey);
-      border: none;
-      width: 100%;
-      font-size: 16px;
-      max-width: 200px;
-      @media screen and (max-width: 768px) {
-        max-width: inherit;
-      }
+    .select-fix {
+        background-image: none;
+        padding: 2px;
+        min-width: 200px;
+        .odswidget-select-button {
+            background: var(--background-contrast-grey);
+            border: none;
+            width: 100%;
+            font-size: 16px;
+            max-width: 200px;
+            @media screen and (max-width: 768px) {
+                max-width: inherit;
+            }
+        }
     }
-  }
 }
 
 /* pop-in */
 dialog {
-  width: 100%;
+    width: 100%;
 }
 .ods-pop-in {
-  background-color: var(--background-overlay-grey);
-  transition: opacity 0.3s, visibility 0.3s;
-  @media screen and (max-width: 768px) {
-    padding: 0;
-  }
-  .ods-pop-in__container {
-    box-shadow: none;
-  }
+    background-color: var(--background-overlay-grey);
+    transition:
+        opacity 0.3s,
+        visibility 0.3s;
+    @media screen and (max-width: 768px) {
+        padding: 0;
+    }
+    .ods-pop-in__container {
+        box-shadow: none;
+    }
+}
+
+/* SWITCH */
+
+/***** SWITCH *****/
+.switch-container {
+    display: inline-flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.switch-container   p {
+    margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .mobile-switch {
+        flex-direction: column;
+        gap: 0px;
+    }
+    .mobile-switch p {
+    margin-bottom: 5px;
+}
+}
+
+.switch-options {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.fr-toggle label {
+    padding-left: 0.5rem;
+    margin-bottom: 0;
+    width: auto;
+}
+
+.fr-toggle label::before {
+    min-width: 3.5rem;
+    max-width: 3.5rem;
+    margin-right: 0.5rem;
+}
+
+.fr-toggle label::after {
+    left: 7px;
+    width: 1.7rem;
+    height: 1.7rem;
+}
+
+.fr-toggle input[type=checkbox]:checked ~ .fr-toggle__label::after {
+    transform: translateX(1.2rem);
 }
 
 /** FIX hover barre de nav ****/
 .ods-front-header__menu-item-link:hover {
-  background: rgba(0, 0, 0, 0.04) !important;
-  color: #333333;
+    background: rgba(0, 0, 0, 0.04) !important;
+    color: #333333;
 }
 
 /** FIX hover mot cles cartes catalogue **/
 .ods-catalog-card__keyword:hover {
-  background-color: var(--highlight);
+    background-color: var(--highlight);
 }
 
 /***** FIX BOUTONS MODIFIER DATASET *****/
 .ods-dataset-visualization__edit-dataset-link {
-  border-radius: 0px !important;
-  font-size: 1rem;
-  font-weight: 500;
-  line-height: 1.5rem;
-  min-height: 2.5rem;
-  padding: 0.5rem 1rem;
-  flex-direction: row-reverse;
-  display: flex;
-  align-items: center;
-  gap: 5px;
+    border-radius: 0px !important;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    min-height: 2.5rem;
+    padding: 0.5rem 1rem;
+    flex-direction: row-reverse;
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
 /***** FIX HOVER BOUTONS *****/
 .ods-dataset-visualization__edit-dataset-link:hover {
-  opacity: 0.6;
-  background-color: var(--highlight) !important;
+    opacity: 0.6;
+    background-color: var(--highlight) !important;
 }
 
 .ods-button.ods-mapbuilder__add-first-dataset-button:hover,
 .ods-page-legacy .btn.ods-mapbuilder__add-first-dataset-button:hover,
 .ods-button--primary:hover {
-  opacity: 0.6;
-  background-color: var(--titles) !important;
+    opacity: 0.6;
+    background-color: var(--titles) !important;
 }
 
 /***** FIX FOOTER *****/
 .fr-footer__content {
-  text-align: left;
+    text-align: left;
 }
-
 
 /***** FIX HREF et a *****/
 
-[href].ods-catalog-card__keyword, [href].ods-tabs__tab.ods-tabs__tab--horizontal, .ods-catalog-card__visualization[href],
+[href].ods-catalog-card__keyword,
+[href].ods-tabs__tab.ods-tabs__tab--horizontal,
+.ods-catalog-card__visualization[href],
 .ods-dataset-visualization__edit-dataset-link[href],
 .ods-button.ods-mapbuilder__add-first-dataset-button[href],
 .ods-page-legacy .btn.ods-mapbuilder__add-first-dataset-button[href],
 .ods-button--primary[href],
 .ods-catalog-card__keyword[href],
 .ods-tabs__tab.ods-tabs__tab--simple-nav[href],
-.ods-button[href]{
+.ods-button[href] {
     background-image: none;
 }
 

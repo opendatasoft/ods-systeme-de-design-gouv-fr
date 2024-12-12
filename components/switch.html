@@ -1,0 +1,20 @@
+<!-- SWITCH -->
+<div class="switch-container mobile-switch">
+    <p>Voir les :</p>
+    <div class="switch-options">
+        <span ng-class="{'gras':view2 == 'socle'}"> équipements </span>
+        <div class="fr-toggle">
+            <input type="checkbox"
+                   class="fr-toggle__input"
+                   aria-describedby="toggle-4633-messages" id="toggle-4633"
+                   ng-model="view2"
+                   ng-true-value="'score_usage'"
+                   ng-false-value="'socle'"
+                   ng-checked="view2 == 'score_usage'">
+            <label class="fr-toggle__label" for="toggle-4633"
+                   ng-class="{'gras':view2 == 'score_usage'}">usages numériques</label>
+            <div class="fr-messages-group" id="toggle-4633-messages" aria-live="polite">
+            </div>
+        </div>
+    </div>
+</div>
